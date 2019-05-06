@@ -16,7 +16,7 @@ import java.util.List;
  */
 public class HomePage {
 
-    WebDriver driver;
+    private final WebDriver driver;
 
     private static final String topMenus = "//*[@id=\"block_top_menu\"]/ul/li";
     private static final String summerDresses = "//*[@id=\"block_top_menu\"]/ul/li[1]/ul/li[2]/ul/li[3]/a";
@@ -77,6 +77,8 @@ public class HomePage {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
+        }catch (NullPointerException var2) {
+            Log.error("driver is null " + var2.toString());
         }
     }
 
