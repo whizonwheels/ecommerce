@@ -68,7 +68,7 @@ public class HomePage {
      *
      * @param name of the top navigation menu link
      */
-    @Step("Hover over Women name: {0}...")
+    @Step("Hover over link name Women name: {0}...")
     public void hoverOverMenuLink(String name) {
         try {
             // Initializing actions class to do action events
