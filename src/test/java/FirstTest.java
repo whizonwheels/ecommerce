@@ -2,6 +2,7 @@
  * Created by Prashant on 4/29/2019.
  */
 
+import io.qameta.allure.Description;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -53,6 +54,7 @@ public class FirstTest {
 
     //-----------------------------------Tests-----------------------------------
     @Test(dataProvider = "endToEndTest")
+    @Description("Test Description: Select a product from online store, create an account and checkout")
     public void endToEndTest(String gender, String size, String prodSelected, String prodType, String fName, String lName, String address, String password, String day,
                              String month, String year, String city, String state, String phone, String zip) throws InterruptedException {
         //-----------------------------------Home Page Initialize-----------------------------------

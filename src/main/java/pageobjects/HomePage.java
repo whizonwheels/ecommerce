@@ -1,5 +1,6 @@
 package pageobjects;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -67,6 +68,7 @@ public class HomePage {
      *
      * @param name of the top navigation menu link
      */
+    @Step("Hover over Women name: {0}...")
     public void hoverOverMenuLink(String name) {
         try {
             // Initializing actions class to do action events
