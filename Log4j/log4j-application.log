@@ -1,0 +1,80 @@
+2019-05-06 03:10:02 INFO  Log:25 - Initializing chrome browser :-chrome
+2019-05-06 03:10:06 INFO  Log:25 - Navigating to page....http://automationpractice.com/index.php
+2019-05-06 03:10:06 INFO  Log:25 - finding all top menu Webelements
+2019-05-06 03:10:06 INFO  Log:25 - Found matching link name on top menu bar:- WOMEN
+2019-05-06 03:10:09 INFO  Log:25 - Clicking on Summer Dress
+2019-05-06 03:10:14 INFO  Log:25 - hover over printed chiffon dress
+2019-05-06 03:10:18 INFO  Log:25 - Clicking on Quick View
+2019-05-06 03:10:25 INFO  Log:25 - Focus switched to Iframe
+2019-05-06 03:10:25 INFO  Log:25 - Selected dress size:- M
+2019-05-06 03:10:25 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> xpath: //*[@id="group_1"]]
+2019-05-06 03:10:25 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> xpath: //*[@id="add_to_cart"]/button]
+2019-05-06 03:10:25 INFO  Log:25 - Clicked on Add to Cart Button on Iframe
+2019-05-06 03:10:28 INFO  Log:25 - Switching focus to active layer
+2019-05-06 03:10:29 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> xpath: //*[@id="layer_cart"]/div[1]/div[1]/h2]
+2019-05-06 03:10:29 INFO  Log:25 - Getting Product Type:- Product successfully added to your shopping cart
+2019-05-06 03:10:29 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> xpath: //*[@id="layer_cart_product_title"]]
+2019-05-06 03:10:29 INFO  Log:25 - Getting Product Description:- Printed Chiffon Dress
+2019-05-06 03:10:29 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> xpath: //*[@id='layer_cart_product_attributes']]
+2019-05-06 03:10:29 INFO  Log:25 - Getting Product dress size:- M
+2019-05-06 03:10:29 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> xpath: //*[@id="layer_cart"]/div[1]/div[2]/div[4]/a]
+2019-05-06 03:10:31 INFO  Log:25 - Clicked on proceed To Checkout Button
+2019-05-06 03:10:31 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> xpath: //*[@id="cart_title"]]
+2019-05-06 03:10:31 INFO  Log:25 - Getting shopping cart title:- SHOPPING-CART SUMMARY
+2019-05-06 03:10:31 INFO  Log:25 - 01. Summary step the shopping cart summary is selected.......
+2019-05-06 03:10:31 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> css selector: #order_step li]
+2019-05-06 03:10:31 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> css selector: td.cart_description  p  a]
+2019-05-06 03:10:31 INFO  Log:25 - Verifying product type is correct in the shopping cart:- Printed Chiffon Dress
+2019-05-06 03:10:31 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> css selector: td.cart_description  small a]
+2019-05-06 03:10:31 INFO  Log:25 - Verifying product size is correct in the shopping cart:-  M
+2019-05-06 03:10:31 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> xpath: //*[@id="center_column"]/p[2]/a[1]]
+2019-05-06 03:10:33 INFO  Log:25 - clicked on shopping cart proceed checkout button
+2019-05-06 03:10:33 INFO  Log:25 - 02. Summary step the shopping cart summary is selected.......
+2019-05-06 03:10:33 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> css selector: #order_step li]
+2019-05-06 03:10:33 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> xpath: //*[@id="email_create"]]
+2019-05-06 03:10:33 INFO  Log:25 - Entered email address to create an account:- apple_11@gmail.com
+2019-05-06 03:10:33 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> xpath: //*[@id="SubmitCreate"]]
+2019-05-06 03:10:33 INFO  Log:25 - Clicked on Create an account button
+2019-05-06 03:10:33 INFO  Log:25 - selecting male gender
+2019-05-06 03:10:35 INFO  Log:25 - Entering First Name :- Ram
+2019-05-06 03:10:35 INFO  Log:25 - Entering Last Name :- Khishan
+2019-05-06 03:10:35 INFO  Log:25 - Email address in the email field matched with the email entered:- apple@a.com
+2019-05-06 03:10:35 INFO  Log:25 - Entering Password in the field :- Happy123
+2019-05-06 03:10:35 INFO  Log:25 - Entering Day of Birth:- 25
+2019-05-06 03:10:35 INFO  Log:25 - Entering Month of Birth:- 3
+2019-05-06 03:10:35 INFO  Log:25 - Entering Year of Birth:- 2002
+2019-05-06 03:10:35 INFO  Log:25 - Entering Address :- 27 abc crescent
+2019-05-06 03:10:35 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> id: address1]
+2019-05-06 03:10:36 INFO  Log:25 - Entering City name:- Acworth
+2019-05-06 03:10:36 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> id: city]
+2019-05-06 03:10:36 INFO  Log:25 - Selecting State:- Georgia
+2019-05-06 03:10:36 INFO  Log:25 - Entering Zip Code:- 30101
+2019-05-06 03:10:36 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> id: postcode]
+2019-05-06 03:10:36 INFO  Log:25 - Entering Mobile Number:- 7709701234
+2019-05-06 03:10:36 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> id: phone_mobile]
+2019-05-06 03:10:36 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> xpath: //*[@id="submitAccount"]]
+2019-05-06 03:10:38 INFO  Log:25 - Clicked on Create an account button
+2019-05-06 03:10:38 INFO  Log:25 - 03. Address step is selected.......
+2019-05-06 03:10:38 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> css selector: #order_step li]
+2019-05-06 03:10:39 INFO  Log:25 - Clicked on Proceed to checkout button on Address tab
+2019-05-06 03:10:40 INFO  Log:25 - 04. Shipping step is selected.......
+2019-05-06 03:10:40 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> css selector: #order_step li]
+2019-05-06 03:10:40 INFO  Log:25 - Checked terms of service checkbox on shipping tab
+2019-05-06 03:10:41 INFO  Log:25 - Clicked on Proceed to checkout button on Shipping tab
+2019-05-06 03:10:41 INFO  Log:25 - 05. Payment step is selected.......
+2019-05-06 03:10:41 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> css selector: #order_step li]
+2019-05-06 03:10:44 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> css selector: td.cart_description  p  a]
+2019-05-06 03:10:44 INFO  Log:25 - Verifying product type is correct in the shopping cart:- Printed Chiffon Dress
+2019-05-06 03:10:44 INFO  Log:25 - Highlighting element.....[[ChromeDriver: chrome on XP (ab3e49a6cedb6b126f720dcc4259cfc7)] -> css selector: td.cart_description  small a]
+2019-05-06 03:10:44 INFO  Log:25 - Verifying product size is correct in the shopping cart:-  M
+2019-05-06 03:11:01 ERROR Log:35 - Not able to find TC check box on Payment page no such element: Unable to locate element: {"method":"id","selector":"cgv"}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'PRASHANT-HOME', ip: '192.168.2.16', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_74'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\Prashant\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:40846}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: ab3e49a6cedb6b126f720dcc4259cfc7
+*** Element info: {Using=id, value=cgv}
