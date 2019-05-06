@@ -29,6 +29,8 @@ public class FirstTest {
         System.setProperty("webdriver.chrome.driver", path);
         ChromeOptions options = new ChromeOptions();
         //options.addArguments("--disable-gpu");
+        //options.addArguments(new String[]{"--headless"});
+        //options.addArguments("window-size=1200x600");
         options.addArguments("--start-maximized");
 
         driver = new ChromeDriver(options);
@@ -43,7 +45,7 @@ public class FirstTest {
     @DataProvider(name = "endToEndTest")
     public Object[][] createData1() {
         return new Object[][]{
-                {"women", "M", "Product successfully added to your shopping cart", "Printed Chiffon Dress"},
+                {"women", "M", "Product successfully added to your shopping cart", "Printed Chiffon Dress", "Test", "Automation", "123 hill st", "Happy123", "25", "3", "2002", "Acworth", "Georgia","7709701234","30101"},
                 //{"women", "L", "Product successfully added to your shopping cart", "Printed Chiffon Dress"}},
         };
     }
@@ -51,7 +53,8 @@ public class FirstTest {
 
     //-----------------------------------Tests-----------------------------------
     @Test(dataProvider = "endToEndTest")
-    public void endToEndTest(String gender, String size, String prodSelected, String prodType) throws InterruptedException {
+    public void endToEndTest(String gender, String size, String prodSelected, String prodType, String fName, String lName, String address, String password, String day,
+                             String month, String year, String city, String state, String phone, String zip) throws InterruptedException {
         //-----------------------------------Home Page Initialize-----------------------------------
         HomePage home = new HomePage(driver);
         //Hover over Women
@@ -108,29 +111,29 @@ public class FirstTest {
         // selected title Mr.
         form.selectMaleGender();
         // Entering First name
-        form.enterFirstName("Ram");
+        form.enterFirstName(fName);
         // Entering Last name
-        form.enterLastName("Khishan");
+        form.enterLastName(lName);
 
         form.isEmailSameAsBefore("apple@a.com");
         // Entering password
-        form.enterPassword("Happy123");
+        form.enterPassword(password);
         // Entering Day of Birth
-        form.selectDay("25");
+        form.selectDay(day);
         // Entering Month of Birth
-        form.selectMonth("3");
+        form.selectMonth(month);
         // Entering Year of Birth
-        form.selectYear("2002");
+        form.selectYear(year);
         // Entering address
-        form.enterAddress("27 abc crescent");
+        form.enterAddress(address);
         // Entering city
-        form.enterCity("Acworth");
+        form.enterCity(city);
         // Entering State
-        form.enterState("Georgia");
+        form.enterState(state);
         // Entering Zip code
-        form.enterZipCode("30101");
+        form.enterZipCode(zip);
         // Entering Mobile phone
-        form.enterMobilePhone("7709701234");
+        form.enterMobilePhone(phone);
         // Clicking on Register button
         form.clickRegisterButton();
         //-----------------------------------Step 3 Address----------------------------------------------------

@@ -120,9 +120,14 @@ public class CreateAccount {
 
     public boolean isEmailSameAsBefore(String emailAdd) {
         boolean val = false;
-        if (getEnteredEmail().equalsIgnoreCase(emailAdd))
+        if (getEnteredEmail().equalsIgnoreCase(emailAdd)) {
             val = true;
-        Log.info("Email address in the email field matched with the email entered:- " + emailAdd);
+            Log.info("Email address in the email field matched with the email entered:- " + emailAdd);
+        }else {
+
+            Log.error("Email address in the email field not matched with the email entered:- " + emailAdd);
+        }
+
         return val;
     }
 
