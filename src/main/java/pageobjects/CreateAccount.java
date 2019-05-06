@@ -53,14 +53,18 @@ public class CreateAccount {
     }
 
     public void setCreateAccountEmail(String emailAddress) {
-        // enter mail address
-        WebElement enterEmail = page.findElement(By.xpath(accountEmail));
-        WebDriverMethods.highLighterMethod(page, enterEmail);
-        //clearing the email input field
-        enterEmail.clear();
-        //Entering email address
-        enterEmail.sendKeys(emailAddress);
-        Log.info("Entered email address to create an account:- " + emailAddress);
+        try {
+            // enter mail address
+            WebElement enterEmail = page.findElement(By.xpath(accountEmail));
+            WebDriverMethods.highLighterMethod(page, enterEmail);
+            //clearing the email input field
+            enterEmail.clear();
+            //Entering email address
+            enterEmail.sendKeys(emailAddress);
+            Log.info("Entered email address to create an account:- " + emailAddress);
+        } catch (NoSuchElementException e) {
+            Log.error("Not able to find email input field:- " + e.getMessage());
+        }
     }
 
     public void clickCreateAccountButton() {

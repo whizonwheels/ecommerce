@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utilities.Log;
+import utilities.WebDriverMethods;
 
 /**
  * Created by Prashant on 5/5/2019.
@@ -22,6 +23,7 @@ public class Step_4_Shipping {
     public void clickShippingProceedToCheckoutButton() {
         try {
             WebElement button = shippingPage.findElement(By.xpath(proceedToCheckout));
+            WebDriverMethods.highLighterMethod(shippingPage, button);
             button.click();
             Log.info("Clicked on Proceed to checkout button on Shipping tab");
         } catch (Error e) {

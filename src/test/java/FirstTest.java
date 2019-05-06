@@ -117,7 +117,7 @@ public class FirstTest {
         Assert.assertTrue(cart.isStepSelected("03. Address"));
         Log.info("03. Address step is selected.......");
         WebDriverMethods.highLighterMethod(driver, cart.getAddressNav());
-        third.clickAdressProceedToCheckoutButton();
+        third.clickAddressProceedToCheckoutButton();
         //-----------------------------------Step 4 Shipping----------------------------------------------------
         Step_4_Shipping fourth = new Step_4_Shipping(driver);
         Assert.assertTrue(cart.isStepSelected("04. Shipping"));
