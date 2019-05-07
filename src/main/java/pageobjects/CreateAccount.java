@@ -1,5 +1,6 @@
 package pageobjects;
 
+import io.qameta.allure.Step;
 import net.bytebuddy.implementation.bytecode.Throw;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -7,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import utilities.Log;
+import utilities.ScreenShotHelper;
 import utilities.WebDriverMethods;
 
 /**
@@ -67,6 +69,7 @@ public class CreateAccount {
         }
     }
 
+    @Step("Step-10 Clicking on Create Account button...")
     public void clickCreateAccountButton() {
         // click proceed to checkout button
         try {
@@ -74,8 +77,12 @@ public class CreateAccount {
             WebDriverMethods.highLighterMethod(page, proceedCheckoutButton);
             proceedCheckoutButton.click();
             Log.info("Clicked on Create an account button");
+            ScreenShotHelper.takeScreenshot(page);
         } catch (NoSuchElementException e) {
             Log.error("Not able to find element " + e.getMessage());
+        } catch (Exception ae) {
+            Log.error("Some exception occured while create account " + ae.getMessage());
+            throw(ae);
         }
     }
 
@@ -85,8 +92,12 @@ public class CreateAccount {
 
     public void selectMaleGender() {
         Log.info("selecting male gender");
-        WebDriverMethods.waitForElementToBeVisibleId(page, genderMale, 5000);
-        page.findElement(By.id(genderMale)).click();
+        try {
+            WebDriverMethods.waitForElementToBeVisibleId(page, genderMale, 5000);
+            page.findElement(By.id(genderMale)).click();
+        } catch (NoSuchElementException e) {
+            Log.error("Element not found " + e.getMessage());
+        }
     }
 
     public void selectFemaleGender() {
@@ -222,13 +233,16 @@ public class CreateAccount {
 
     }
 
+    @Step("Step-11 Clicking Register button...")
     public void clickRegisterButton() {
 
         try {
             WebElement el = page.findElement(By.xpath(registerButton));
             WebDriverMethods.highLighterMethod(page, el);
+            ScreenShotHelper.takeScreenshot(page);
             el.click();
             Log.info("Clicked on Create an account button");
+
         } catch (NoSuchElementException e) {
             Log.error("Not able to find element " + e.getMessage());
         }

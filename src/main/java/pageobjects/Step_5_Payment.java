@@ -1,5 +1,6 @@
 package pageobjects;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -25,6 +26,7 @@ public class Step_5_Payment {
         return cart.getProductType();
     }
 
+    @Step("Step-13 Verifying Product type and Size on step 5...")
     public String verifyProdSizePaymentTab() {
         return cart.getProductSize();
     }
